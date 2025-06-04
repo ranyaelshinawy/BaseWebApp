@@ -17,7 +17,7 @@ function getWeather() {
 
   $.ajax(url,{success: function(data){
     $(".city").text(data.name);
-    $(".temp").text("Temp: " + data.main.temp);
+    $(".temp").text("temp: " + data.main.temp);
 
   }})
 }
